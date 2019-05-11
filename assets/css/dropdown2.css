@@ -1,0 +1,19 @@
+/**
+ * @version 0.0.1
+ * @author Technote
+ * @since 0.0.1
+ * @copyright Technote All Rights Reserved
+ * @license http://www.opensource.org/licenses/gpl-2.0.php GNU General Public License, version 2
+ * @link https://technote.space/
+ */
+.dropdown2-test1 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #6f6 75%);
+}
+
+.dropdown2-test2 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #66f 75%);
+}
+
+.dropdown2-test3 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #f66 75%);
+}

@@ -17,3 +17,7 @@ global.wp.editor = {
 	BlockFormatControls: () => {
 	},
 };
+global.wp.hooks = {
+	addFilter: () => {
+	},
+};

@@ -40,5 +40,14 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 			'wp-format-library',
 		], $this->app->get_plugin_version(), false );
 		$this->enqueue_style( 'gutenberg-dropdown1', 'dropdown1.css' );
+
+		$this->enqueue_script( 'gutenberg-dropdown2', 'dropdown2.min.js', [
+			'wp-components',
+			'wp-rich-text',
+			'wp-editor',
+			'wp-element',
+			'wp-format-library',
+		], $this->app->get_plugin_version(), false );
+		$this->enqueue_style( 'gutenberg-dropdown2', 'dropdown2.css' );
 	}
 }
