@@ -32,21 +32,13 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 	 */
 	/** @noinspection PhpUnusedPrivateMethodInspection */
 	private function enqueue_block_editor_assets() {
-		$this->enqueue_script( 'gutenberg-samples', 'dropdown1.min.js', [
-			'wp-hooks',
-			'wp-blocks',
-			'wp-compose',
-			'wp-element',
-			'wp-editor',
+		$this->enqueue_script( 'gutenberg-dropdown1', 'dropdown1.min.js', [
 			'wp-components',
-			'wp-edit-post',
-			'wp-data',
-			'wp-i18n',
-			'lodash',
+			'wp-rich-text',
+			'wp-editor',
+			'wp-element',
+			'wp-format-library',
 		], $this->app->get_plugin_version(), false );
-		$this->localize_script( 'gutenberg-samples', 'gutenbergSampleParams', [
-			'plugin_icon' => $this->get_img_url( 'icon-24x24.png' ),
-		] );
-		$this->enqueue_style( 'gutenberg-samples', 'gutenberg.css' );
+		$this->enqueue_style( 'gutenberg-dropdown1', 'dropdown1.css' );
 	}
 }

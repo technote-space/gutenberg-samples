@@ -1,6 +1,6 @@
 const { Fragment } = wp.element;
 
-import { PLUGIN_NAME } from '../../common/constant';
+import { PLUGIN_NAME } from '../constant';
 import MyDropdown from '../components/my-dropdown';
 import MyDropdownControls from '../components/my-dropdown-controls';
 
