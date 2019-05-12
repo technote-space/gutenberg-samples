@@ -6,7 +6,7 @@ const MyDropdown = () => <BlockFormatControls>
 	<div className="editor-format-toolbar block-editor-format-toolbar">
 		<Toolbar>
 			<MyDropdownControls.Slot>
-				{ fills => fills.length !== 0 && <DropdownMenu // eslint-disable-line no-magic-numbers
+				{ fills => fills.length && <DropdownMenu
 					icon='admin-customizer'
 					position="bottom left"
 					label='dropdown'

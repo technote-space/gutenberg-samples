@@ -6,12 +6,17 @@
     "test": "npm run lint && npm run cover",
     "lint": "eslint src/**/**/*.js && eslint test/**/**/*.js",
     "cover": "NODE_ENV=test nyc --reporter=lcov --reporter=text-summary mocha --recursive",
-    "develop": "webpack --mode development --config dropdown1.config.js && webpack --mode development --config dropdown2.config.js",
-    "build": "webpack --mode production --config dropdown1.config.js && webpack --mode production --config dropdown2.config.js"
+    "develop": "npm run develop:dropdown1 && npm run develop:dropdown2",
+    "build": "npm run build:dropdown1 && npm run build:dropdown2",
+    "build:dropdown1": "webpack --mode production --config dropdown1.config.js",
+    "build:dropdown2": "webpack --mode production --config dropdown2.config.js",
+    "develop:dropdown1": "webpack --mode development --config dropdown1.config.js",
+    "develop:dropdown2": "webpack --mode development --config dropdown2.config.js"
   },
   "author": "Technote <technote.space@gmail.com> (https://technote.space)",
   "license": "GPL-3.0",
   "dependencies": {
+    "@technote-space/register-grouped-format-type": "^1.0.0",
     "classnames": "^2.2.6"
   },
   "devDependencies": {

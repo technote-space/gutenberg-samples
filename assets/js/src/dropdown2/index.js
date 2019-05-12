@@ -1,28 +1,25 @@
+require( '@technote-space/register-grouped-format-type' );
+
 const { ToolbarButton } = wp.components;
+const { toggleFormat, registerFormatTypeGroup, registerGroupedFormatType } = wp.richText;
 
-import { PLUGIN_NAME } from './constant';
-import { registerGroupedFormatType, getToolbarButtonProps } from './utils';
+const getProps = ( group, name ) => {
+	return {
+		name,
+		group,
+		create: ( { args, name, formatName } ) => <ToolbarButton
+			icon='admin-customizer'
+			title={ <div className={ name }>{ name }</div> }
+			onClick={ () => args.onChange( toggleFormat( args.value, { type: formatName } ) ) }
+			isActive={ args.isActive }
+		/>,
+	};
+};
 
-[
-	{
-		name: 'test1',
-		create: ( { args, name, formatName } ) => <ToolbarButton
-			{ ...getToolbarButtonProps( { args, name, formatName } ) }
-		/>,
-		group: 'test1',
-	},
-	{
-		name: 'test2',
-		create: ( { args, name, formatName } ) => <ToolbarButton
-			{ ...getToolbarButtonProps( { args, name, formatName } ) }
-		/>,
-		group: 'test1',
-	},
-	{
-		name: 'test3',
-		create: ( { args, name, formatName } ) => <ToolbarButton
-			{ ...getToolbarButtonProps( { args, name, formatName } ) }
-		/>,
-		group: 'test2',
-	},
-].forEach( ( { name, create, group } ) => registerGroupedFormatType( { name, className: PLUGIN_NAME + '-' + name, create, group: PLUGIN_NAME + '/' + group } ) );
+registerFormatTypeGroup( 'test1', {
+	icon: 'admin-network',
+} );
+
+registerGroupedFormatType( getProps( 'test1', 'dropdown2-test1' ) );
+registerGroupedFormatType( getProps( 'test2', 'dropdown2-test2' ) );
+registerGroupedFormatType( getProps( 'test2', 'dropdown2-test3' ) );
