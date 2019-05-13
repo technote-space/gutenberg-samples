@@ -1,25 +1,18 @@
 const { registerFormatType } = wp.richText;
-const { ToolbarButton } = wp.components;
 
-import { getToolbarButtonProps, getRichTextSetting } from './utils';
+import { createToolbarButton, getRichTextSetting } from './utils';
 
 [
 	{
 		name: 'test1',
-		create: ( { args, name, formatName } ) => <ToolbarButton
-			{ ...getToolbarButtonProps( { args, name, formatName } ) }
-		/>,
+		create: createToolbarButton,
 	},
 	{
 		name: 'test2',
-		create: ( { args, name, formatName } ) => <ToolbarButton
-			{ ...getToolbarButtonProps( { args, name, formatName } ) }
-		/>,
+		create: createToolbarButton,
 	},
 	{
 		name: 'test3',
-		create: ( { args, name, formatName } ) => <ToolbarButton
-			{ ...getToolbarButtonProps( { args, name, formatName } ) }
-		/>,
+		create: createToolbarButton,
 	},
 ].forEach( ( { name, create, setting = {} }, index ) => registerFormatType( ...getRichTextSetting( { name, create, setting }, index ) ) );

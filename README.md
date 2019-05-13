@@ -5,20 +5,26 @@
 [![WordPress: >=5.1](https://img.shields.io/badge/WordPress-%3E%3D5.1-brightgreen.svg)](https://wordpress.org/)
 
 Gutenberg Samples
+- dropdown1  
+![dropdown1](https://raw.githubusercontent.com/technote-space/gutenberg-samples/master/screenshot-1.png)
+  - Add Dropdown which has some `RichText Toolbar Buttons`
+    - I use `Fill` and `Slot` to gather buttons and use for dropdown items.
+    - Each format types's `edit` function creates `Fill` to register component.
+    - Only first format type's `edit` function create component to use `Slot`  
+    which provides some components that registered by `Fill` above,  
+    which are pass to DropdownMenu's controls.
+- dropdown2  
+![dropdown2](https://raw.githubusercontent.com/technote-space/gutenberg-samples/master/screenshot-2.png)
+  - Add Dropdown which has some `RichText Toolbar Buttons` using library
+  - [library](https://github.com/technote-space/register-grouped-format-type)
 
-## スクリーンショット
-
-## 要件
-- PHP 5.6 以上
-- WordPress 5.1 以上
-
-## 導入手順
-
-## 使用方法
+## requirements
+- \>= PHP 5.6
+- \>= WordPress 5.1
 
 ## Author
 [GitHub (Technote)](https://github.com/technote-space)  
 [Blog](https://technote.space)
 
-## プラグイン作成用フレームワーク
+## Plugin framework
 [WP Content Framework](https://github.com/wp-content-framework/core)
