@@ -15,7 +15,7 @@ if ( ! defined( 'GUTENBERG_SAMPLES' ) ) {
 return [
 
 	// required wordpress version
-	'required_wordpress_version' => '5.1', // for gutenberg
+	'required_wordpress_version' => '5.2',
 
 	// github repo
 	'github_repo'                => 'technote-space/gutenberg-samples',
