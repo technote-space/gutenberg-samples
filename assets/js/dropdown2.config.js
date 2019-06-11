@@ -10,8 +10,6 @@ const webpackConfig = {
 	output: {
 		path: __dirname,
 		filename: `${ target }.min.js`,
-		library: `${ target }`,
-		libraryTarget: 'umd',
 	},
 	module: {
 		rules: [
