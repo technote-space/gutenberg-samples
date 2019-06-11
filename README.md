@@ -21,7 +21,7 @@ Gutenberg Samples
 
 ## Requirements
 - \>= PHP 5.6
-- \>= WordPress 5.2
+- \>= WordPress 5.0
 
 ## Author
 [GitHub (Technote)](https://github.com/technote-space)  
