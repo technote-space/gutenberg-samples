@@ -15,7 +15,8 @@ Gutenberg Samples
     which are pass to DropdownMenu's controls.
 - dropdown2  
 ![dropdown2](https://raw.githubusercontent.com/technote-space/gutenberg-samples/master/screenshot-2.png)
-  - Add Dropdown which has some `RichText Toolbar Buttons` using library
+  - Add Dropdown which has some `RichText Toolbar Buttons` using library.
+  - Add color palette and font size picker to toolbar and inspector.
   - [Library](https://github.com/technote-space/register-grouped-format-type)
 
 ## Requirements
