@@ -1,25 +1,22 @@
-require( '@technote-space/register-grouped-format-type' );
+import { Common, RichText } from '@technote-space/register-grouped-format-type';
 
-const { ToolbarButton } = wp.components;
-const { toggleFormat, registerFormatTypeGroup, registerGroupedFormatType } = wp.richText;
+const { registerFormatTypeGroup, registerGroupedFormatType } = RichText;
+const { getToolbarButtonProps, getColorButtonProps, getFontSizesButtonProps } = Common.Helpers;
 
-const getProps = ( group, name ) => {
-	return {
-		name,
-		group,
-		create: ( { args, formatName } ) => <ToolbarButton
-			icon='admin-customizer'
-			title={ <div className={ name }>{ name }</div> }
-			onClick={ () => args.onChange( toggleFormat( args.value, { type: formatName } ) ) }
-			isActive={ args.isActive }
-		/>,
-	};
-};
-
-registerFormatTypeGroup( 'test1', {
+registerFormatTypeGroup( 'test2', {
 	icon: 'admin-network',
 } );
+registerFormatTypeGroup( 'inspector', {
+	inspectorSettings: {
+		title: 'test inspector',
+		initialOpen: true,
+	},
+} );
 
-registerGroupedFormatType( getProps( 'test1', 'dropdown2-test1' ) );
-registerGroupedFormatType( getProps( 'test2', 'dropdown2-test2' ) );
-registerGroupedFormatType( getProps( 'test2', 'dropdown2-test3' ) );
+registerGroupedFormatType( getToolbarButtonProps( 'test1', 'dropdown2-test1', 'admin-customizer' ) );
+registerGroupedFormatType( getToolbarButtonProps( 'test2', 'dropdown2-test2', 'admin-customizer' ) );
+registerGroupedFormatType( getToolbarButtonProps( 'test2', 'dropdown2-test3', 'admin-customizer' ) );
+
+registerGroupedFormatType( getColorButtonProps( 'inspector', 'font-color', 'Font Color', 'admin-site', 'color' ) );
+registerGroupedFormatType( getColorButtonProps( 'inspector', 'background-color', 'Background Color', 'editor-textcolor', 'background-color' ) );
+registerGroupedFormatType( getFontSizesButtonProps( 'inspector', 'font-size', 'Font Size', 'edit' ) );
