@@ -6,12 +6,10 @@ global.wp.element = {
 	},
 };
 global.wp.components = {
-	createSlotFill: () => {
-		return {
-			Fill: {},
-			Slot: {},
-		};
-	},
+	createSlotFill: () => ( {
+		Fill: {},
+		Slot: {},
+	} ),
 };
 global.wp.editor = {
 	BlockFormatControls: () => {
