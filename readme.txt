@@ -16,6 +16,7 @@ Gutenberg samples
 Gutenberg samples
 [GitHub (More details)](https://github.com/technote-space/gutenberg-samples)
 [Issues (Reporting a new bug or feature request)](https://github.com/technote-space/gutenberg-samples/issues)
+[Demonstration](https://technote-space.github.io/gutenberg-samples)
 
 This plugin needs PHP5.6 or higher.
 
