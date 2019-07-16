@@ -1,10 +1,11 @@
 === Gutenberg Samples ===
 Contributors: technote0space
 Tags: gutenberg, hide, block, temporarily
-Requires at least: 5.1
+Requires at least: 5.2
 Requires PHP: 5.6
 Tested up to: 5.2
-Stable tag: 0.0.1
+Stable tag: 0.0.2
+Donate link: https://paypal.me/technote0space
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +16,7 @@ Gutenberg samples
 Gutenberg samples
 [GitHub (More details)](https://github.com/technote-space/gutenberg-samples)
 [Issues (Reporting a new bug or feature request)](https://github.com/technote-space/gutenberg-samples/issues)
+[Demonstration](https://technote-space.github.io/gutenberg-samples)
 
 This plugin needs PHP5.6 or higher.
 
@@ -30,8 +32,3 @@ This plugin needs PHP5.6 or higher.
 == Upgrade Notice ==
 
 == Changelog ==
-
-= 1.0.0 (20xx/yy/zz) =
-
-* First release
-

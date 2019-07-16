@@ -1,8 +1,6 @@
 <?php
 /**
- * @version 0.0.1
  * @author Technote
- * @since 0.0.1
  * @copyright Technote All Rights Reserved
  * @license http://www.opensource.org/licenses/gpl-2.0.php GNU General Public License, version 2
  * @link https://technote.space/
@@ -29,27 +27,45 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 
 	/**
 	 * enqueue css for gutenberg
+	 *
+	 * @noinspection PhpUnusedPrivateMethodInspection
+	 * @SuppressWarnings(PHPMD.UnusedPrivateMethod)
 	 */
-	/** @noinspection PhpUnusedPrivateMethodInspection */
 	private function enqueue_block_editor_assets() {
-		$this->enqueue_script( 'gutenberg-dropdown1', 'dropdown1.min.js', [
+		$this->enqueue_dropdown1();
+		$this->enqueue_dropdown2();
+	}
+
+	/**
+	 * enqueue dropdown1
+	 */
+	private function enqueue_dropdown1() {
+		$this->enqueue_script( 'gutenberg-dropdown1', 'dropdown1.min.js', $this->app->editor->filter_packages( [
+			'wp-block-editor',
 			'wp-components',
-			'wp-rich-text',
 			'wp-editor',
+			'wp-rich-text',
 			'wp-element',
 			'wp-format-library',
-		], $this->app->get_plugin_version(), false );
+		] ), $this->app->get_plugin_version(), false );
 		$this->enqueue_style( 'gutenberg-dropdown1', 'dropdown1.css' );
+	}
 
-		$this->enqueue_script( 'gutenberg-dropdown2', 'dropdown2.min.js', [
+	/**
+	 * enqueue dropdown2
+	 */
+	private function enqueue_dropdown2() {
+		$this->enqueue_script( 'gutenberg-dropdown2', 'dropdown2.min.js', $this->app->editor->filter_packages( [
+			'wp-block-editor',
 			'wp-components',
+			'wp-core-data',
 			'wp-data',
 			'wp-editor',
 			'wp-element',
+			'wp-i18n',
 			'wp-rich-text',
 			'wp-url',
-			'lodash',
-		], $this->app->get_plugin_version(), false );
+		], [ 'lodash' ] ), $this->app->get_plugin_version(), false );
 		$this->enqueue_style( 'gutenberg-dropdown2', 'dropdown2.css' );
 	}
 }
