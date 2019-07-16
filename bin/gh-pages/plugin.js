@@ -2,6 +2,8 @@ const { Fragment } = wp.element;
 const { addFilter } = wp.hooks;
 
 import './plugin.scss';
+import './dropdown1.css'
+import './dropdown2.css'
 
 window.cbkParams = window.cbkParams || {};
 

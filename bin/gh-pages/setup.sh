@@ -12,5 +12,6 @@ source ${SCRIPT_DIR}/variables.sh
 yarn --cwd ${JS_DIR} install
 yarn --cwd ${JS_DIR} build
 
-cp -f ${JS_DIR}/index.min.js ${GH_PAGES_DIR}/
+cp -f ${JS_DIR}/dropdown1.min.js ${GH_PAGES_DIR}/index.min.js
+cat ${JS_DIR}/dropdown2.min.js >> ${GH_PAGES_DIR}/index.min.js
 curl -o ${GH_PAGES_DIR}/screenshot.png https://raw.githubusercontent.com/technote-space/gutenberg-samples/master/screenshot-2.png

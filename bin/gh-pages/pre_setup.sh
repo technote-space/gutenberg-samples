@@ -14,3 +14,5 @@ source ${SCRIPT_DIR}/variables.sh
 
 cp -f ${current}/plugin.js ${GH_WORK_DIR}/
 cp -f ${current}/plugin.scss ${GH_WORK_DIR}/
+cp -f ${CSS_DIR}/dropdown1.css ${GH_WORK_DIR}/
+cp -f ${CSS_DIR}/dropdown2.css ${GH_WORK_DIR}/
