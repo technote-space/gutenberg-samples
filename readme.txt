@@ -1,7 +1,7 @@
 === Gutenberg Samples ===
 Contributors: technote0space
 Tags: gutenberg, hide, block, temporarily
-Requires at least: 5.1
+Requires at least: 5.2
 Requires PHP: 5.6
 Tested up to: 5.2
 Stable tag: 0.0.1
