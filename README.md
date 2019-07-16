@@ -10,6 +10,9 @@
 Gutenberg Samples
 
 [Demonstration](https://technote-space.github.io/gutenberg-samples)
+
+[Latest version](https://github.com/technote-space/gutenberg-samples/releases/latest/download/gutenberg-samples.zip)
+
 - dropdown1  
 ![dropdown1](https://raw.githubusercontent.com/technote-space/gutenberg-samples/master/screenshot-1.png)
   - Add Dropdown which has some `RichText Toolbar Buttons`
