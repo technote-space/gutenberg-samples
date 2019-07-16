@@ -32,11 +32,8 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 	 * @SuppressWarnings(PHPMD.UnusedPrivateMethod)
 	 */
 	private function enqueue_block_editor_assets() {
-
 		$this->enqueue_dropdown1();
-
 		$this->enqueue_dropdown2();
-
 	}
 
 	/**
