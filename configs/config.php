@@ -15,6 +15,9 @@ return [
 	// required wordpress version
 	'required_wordpress_version' => '5.2',
 
+	// update
+	'update_info_file_url'       => 'https://raw.githubusercontent.com/technote-space/gutenberg-samples/master/update.json',
+
 	// github repo
 	'github_repo'                => 'technote-space/gutenberg-samples',
 ];
