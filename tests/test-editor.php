@@ -50,7 +50,8 @@ class EditorTest extends WP_UnitTestCase {
 	}
 
 	private static function reset() {
-		wp_dequeue_script( 'change-block-keywords' );
+		wp_dequeue_script( 'gutenberg-dropdown1' );
+		wp_dequeue_script( 'gutenberg-dropdown2' );
 		if ( static::$is_ci ) {
 			static::$app->file->put_contents( static::$app->define->plugin_assets_dir . DS . 'js' . DS . 'dropdown1.min.js', '' );
 			static::$app->file->put_contents( static::$app->define->plugin_assets_dir . DS . 'js' . DS . 'dropdown2.min.js', '' );
@@ -60,8 +61,10 @@ class EditorTest extends WP_UnitTestCase {
 	public function test_enqueue_block_editor_assets() {
 		static::reset();
 
-		$this->assertFalse( wp_script_is( 'change-block-keywords' ) );
+		$this->assertFalse( wp_script_is( 'gutenberg-dropdown1' ) );
+		$this->assertFalse( wp_script_is( 'gutenberg-dropdown2' ) );
 		do_action( 'enqueue_block_editor_assets' );
-		$this->assertTrue( wp_script_is( 'change-block-keywords' ) );
+		$this->assertTrue( wp_script_is( 'gutenberg-dropdown1' ) );
+		$this->assertTrue( wp_script_is( 'gutenberg-dropdown2' ) );
 	}
 }
