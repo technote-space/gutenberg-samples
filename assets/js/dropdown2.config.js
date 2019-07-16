@@ -1,11 +1,15 @@
+const SpeedMeasurePlugin = require( 'speed-measure-webpack-plugin' );
+const DuplicatePackageCheckerPlugin = require( 'duplicate-package-checker-webpack-plugin' );
+const smp = new SpeedMeasurePlugin();
 const webpack = require( 'webpack' );
-const p = require( './package' );
+const pkg = require( './package' );
+const path = require( 'path' );
 const target = 'dropdown2';
 
-const banner = `${ target } ${ p.version }\nCopyright (c) ${ new Date().getFullYear() } ${ p.author }\nLicense: ${ p.license }`;
+const banner = `${ target } ${ pkg.version }\nCopyright (c) ${ new Date().getFullYear() } ${ pkg.author }\nLicense: ${ pkg.license }`;
 
 const webpackConfig = {
-	context: __dirname + `/src/${ target }`,
+	context: path.resolve( __dirname, 'src', target ),
 	entry: './index.js',
 	output: {
 		path: __dirname,
@@ -20,12 +24,10 @@ const webpackConfig = {
 			},
 		],
 	},
-	externals: {
-		lodash: 'lodash',
-	},
 	plugins: [
 		new webpack.BannerPlugin( banner ),
+		new DuplicatePackageCheckerPlugin(),
 	],
 };
 
-module.exports = webpackConfig;
+module.exports = smp.wrap( webpackConfig );

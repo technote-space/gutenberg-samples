@@ -1,4 +1,4 @@
-const { BlockFormatControls } = wp.editor;
+const { BlockFormatControls } = wp.blockEditor;
 const { Toolbar, DropdownMenu } = wp.components;
 import MyDropdownControls from './my-dropdown-controls';
 

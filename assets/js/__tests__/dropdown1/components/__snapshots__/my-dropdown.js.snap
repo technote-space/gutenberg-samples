@@ -1,0 +1,447 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyDropdown should render MyDropdown: click 1`] = `
+Array [
+  <div
+    className="editor-format-toolbar block-editor-format-toolbar"
+    key="3---0/.0"
+  >
+    <div
+      className="components-toolbar"
+    >
+      <div
+        className="components-dropdown-menu"
+      >
+        <ForwardRef(IconButton)
+          aria-expanded={true}
+          aria-haspopup="true"
+          className="components-dropdown-menu__toggle is-opened"
+          icon="admin-customizer"
+          label="dropdown"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tooltip="dropdown"
+        >
+          <ForwardRef(Button)
+            aria-expanded={true}
+            aria-haspopup="true"
+            aria-label="dropdown"
+            className="components-icon-button components-dropdown-menu__toggle is-opened"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              aria-expanded={true}
+              aria-haspopup="true"
+              aria-label="dropdown"
+              className="components-button components-icon-button components-dropdown-menu__toggle is-opened"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="dashicon dashicons-admin-customizer"
+                focusable="false"
+                height={20}
+                role="img"
+                viewBox="0 0 20 20"
+                width={20}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.33 3.57s.27-.8-.31-1.36c-.53-.52-1.22-.24-1.22-.24-.61.3-5.76 3.47-7.67 5.57-.86.96-2.06 3.79-1.09 4.82.92.98 3.96-.17 4.79-1 2.06-2.06 5.21-7.17 5.5-7.79zM1.4 17.65c2.37-1.56 1.46-3.41 3.23-4.64.93-.65 2.22-.62 3.08.29.63.67.8 2.57-.16 3.46-1.57 1.45-4 1.55-6.15.89z"
+                />
+              </svg>
+            </button>
+          </ForwardRef(Button)>
+        </ForwardRef(IconButton)>
+        <span>
+          <div
+            onKeyDown={[Function]}
+            tabIndex="-1"
+          >
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="components-popover components-dropdown-menu__popover is-bottom is-left components-animate__appear is-from-right is-from-top"
+                onKeyDown={[Function]}
+                onMouseDown={[Function]}
+                style={
+                  Object {
+                    "left": undefined,
+                    "top": undefined,
+                    "visibility": undefined,
+                  }
+                }
+              >
+                <div
+                  className="components-popover__content"
+                  style={
+                    Object {
+                      "maxHeight": undefined,
+                      "maxWidth": undefined,
+                    }
+                  }
+                  tabIndex="-1"
+                >
+                  <ForwardRef(NavigableMenu)
+                    aria-label="dropdown"
+                    className="components-dropdown-menu__menu"
+                    role="menu"
+                  >
+                    <ForwardRef(NavigableContainer)
+                      aria-label="dropdown"
+                      aria-orientation="vertical"
+                      className="components-dropdown-menu__menu"
+                      eventToOffset={[Function]}
+                      onlyBrowserTabstops={false}
+                      role="menu"
+                      stopNavigationEvents={true}
+                    >
+                      <div
+                        aria-label="dropdown"
+                        aria-orientation="vertical"
+                        className="components-dropdown-menu__menu"
+                        onKeyDown={[Function]}
+                        role="menu"
+                      >
+                        <ForwardRef(IconButton)
+                          className="components-dropdown-menu__menu-item is-active"
+                          icon="admin-customizer"
+                          key="0,0"
+                          onClick={[Function]}
+                          role="menuitem"
+                        >
+                          <ForwardRef(Button)
+                            className="components-icon-button components-dropdown-menu__menu-item is-active has-text"
+                            onClick={[Function]}
+                            role="menuitem"
+                          >
+                            <button
+                              className="components-button components-icon-button components-dropdown-menu__menu-item is-active has-text"
+                              onClick={[Function]}
+                              role="menuitem"
+                              type="button"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="dashicon dashicons-admin-customizer"
+                                focusable="false"
+                                height={20}
+                                role="img"
+                                viewBox="0 0 20 20"
+                                width={20}
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M18.33 3.57s.27-.8-.31-1.36c-.53-.52-1.22-.24-1.22-.24-.61.3-5.76 3.47-7.67 5.57-.86.96-2.06 3.79-1.09 4.82.92.98 3.96-.17 4.79-1 2.06-2.06 5.21-7.17 5.5-7.79zM1.4 17.65c2.37-1.56 1.46-3.41 3.23-4.64.93-.65 2.22-.62 3.08.29.63.67.8 2.57-.16 3.46-1.57 1.45-4 1.55-6.15.89z"
+                                />
+                              </svg>
+                              <div
+                                className="test1"
+                              >
+                                test1
+                              </div>
+                            </button>
+                          </ForwardRef(Button)>
+                        </ForwardRef(IconButton)>
+                        <ForwardRef(IconButton)
+                          className="components-dropdown-menu__menu-item"
+                          icon="admin-customizer"
+                          key="0,1"
+                          onClick={[Function]}
+                          role="menuitem"
+                        >
+                          <ForwardRef(Button)
+                            className="components-icon-button components-dropdown-menu__menu-item has-text"
+                            onClick={[Function]}
+                            role="menuitem"
+                          >
+                            <button
+                              className="components-button components-icon-button components-dropdown-menu__menu-item has-text"
+                              onClick={[Function]}
+                              role="menuitem"
+                              type="button"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="dashicon dashicons-admin-customizer"
+                                focusable="false"
+                                height={20}
+                                role="img"
+                                viewBox="0 0 20 20"
+                                width={20}
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M18.33 3.57s.27-.8-.31-1.36c-.53-.52-1.22-.24-1.22-.24-.61.3-5.76 3.47-7.67 5.57-.86.96-2.06 3.79-1.09 4.82.92.98 3.96-.17 4.79-1 2.06-2.06 5.21-7.17 5.5-7.79zM1.4 17.65c2.37-1.56 1.46-3.41 3.23-4.64.93-.65 2.22-.62 3.08.29.63.67.8 2.57-.16 3.46-1.57 1.45-4 1.55-6.15.89z"
+                                />
+                              </svg>
+                              <div
+                                className="test2"
+                              >
+                                test2
+                              </div>
+                            </button>
+                          </ForwardRef(Button)>
+                        </ForwardRef(IconButton)>
+                      </div>
+                    </ForwardRef(NavigableContainer)>
+                  </ForwardRef(NavigableMenu)>
+                </div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>,
+  Array [
+    <div>
+       
+      Array [
+        "",
+        "",
+        <div
+          className="editor-rich-text block-editor-rich-text"
+        >
+          <div
+            onFocus={[Function]}
+          >
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseDown={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                className="components-autocomplete"
+                onClick={[Function]}
+              >
+                <p
+                  aria-activedescendant={null}
+                  aria-autocomplete="list"
+                  aria-label="Paragraph block"
+                  aria-multiline={true}
+                  aria-owns={null}
+                  className="block-editor-rich-text__editable editor-rich-text__editable wp-block-paragraph test-block-edit"
+                  contentEditable={true}
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "<br data-rich-text-padding=\\"true\\">",
+                    }
+                  }
+                  data-is-placeholder-visible={true}
+                  onBlur={[Function]}
+                  onCompositionEnd={[Function]}
+                  onFocus={[Function]}
+                  onInput={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseDown={[Function]}
+                  onPaste={[Function]}
+                  onTouchStart={[Function]}
+                  role="textbox"
+                  style={
+                    Object {
+                      "backgroundColor": undefined,
+                      "color": undefined,
+                      "direction": undefined,
+                      "fontSize": undefined,
+                      "textAlign": undefined,
+                    }
+                  }
+                  suppressContentEditableWarning={true}
+                />
+                <p
+                  className="editor-rich-text__editable block-editor-rich-text__editable wp-block-paragraph test-block-edit"
+                  style={
+                    Object {
+                      "backgroundColor": undefined,
+                      "color": undefined,
+                      "direction": undefined,
+                      "fontSize": undefined,
+                      "textAlign": undefined,
+                    }
+                  }
+                >
+                  Start writing or type / to choose a block
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>,
+      ]
+       
+    </div>,
+    "",
+    "",
+    "",
+  ],
+]
+`;
+
+exports[`MyDropdown should render MyDropdown: render 1`] = `
+Array [
+  <div
+    className="editor-format-toolbar block-editor-format-toolbar"
+    key="3---0/.0"
+  >
+    <div
+      className="components-toolbar"
+    >
+      <div
+        className="components-dropdown-menu"
+      >
+        <ForwardRef(IconButton)
+          aria-expanded={false}
+          aria-haspopup="true"
+          className="components-dropdown-menu__toggle"
+          icon="admin-customizer"
+          label="dropdown"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tooltip="dropdown"
+        >
+          <ForwardRef(Button)
+            aria-expanded={false}
+            aria-haspopup="true"
+            aria-label="dropdown"
+            className="components-icon-button components-dropdown-menu__toggle"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <button
+              aria-expanded={false}
+              aria-haspopup="true"
+              aria-label="dropdown"
+              className="components-button components-icon-button components-dropdown-menu__toggle"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="dashicon dashicons-admin-customizer"
+                focusable="false"
+                height={20}
+                role="img"
+                viewBox="0 0 20 20"
+                width={20}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.33 3.57s.27-.8-.31-1.36c-.53-.52-1.22-.24-1.22-.24-.61.3-5.76 3.47-7.67 5.57-.86.96-2.06 3.79-1.09 4.82.92.98 3.96-.17 4.79-1 2.06-2.06 5.21-7.17 5.5-7.79zM1.4 17.65c2.37-1.56 1.46-3.41 3.23-4.64.93-.65 2.22-.62 3.08.29.63.67.8 2.57-.16 3.46-1.57 1.45-4 1.55-6.15.89z"
+                />
+              </svg>
+            </button>
+          </ForwardRef(Button)>
+        </ForwardRef(IconButton)>
+      </div>
+    </div>
+  </div>,
+  Array [
+    <div>
+       
+      Array [
+        "",
+        "",
+        <div
+          className="editor-rich-text block-editor-rich-text"
+        >
+          <div
+            onFocus={[Function]}
+          >
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseDown={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                className="components-autocomplete"
+                onClick={[Function]}
+              >
+                <p
+                  aria-activedescendant={null}
+                  aria-autocomplete="list"
+                  aria-label="Paragraph block"
+                  aria-multiline={true}
+                  aria-owns={null}
+                  className="block-editor-rich-text__editable editor-rich-text__editable wp-block-paragraph test-block-edit"
+                  contentEditable={true}
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "<br data-rich-text-padding=\\"true\\">",
+                    }
+                  }
+                  data-is-placeholder-visible={true}
+                  onBlur={[Function]}
+                  onCompositionEnd={[Function]}
+                  onFocus={[Function]}
+                  onInput={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseDown={[Function]}
+                  onPaste={[Function]}
+                  onTouchStart={[Function]}
+                  role="textbox"
+                  style={
+                    Object {
+                      "backgroundColor": undefined,
+                      "color": undefined,
+                      "direction": undefined,
+                      "fontSize": undefined,
+                      "textAlign": undefined,
+                    }
+                  }
+                  suppressContentEditableWarning={true}
+                />
+                <p
+                  className="editor-rich-text__editable block-editor-rich-text__editable wp-block-paragraph test-block-edit"
+                  style={
+                    Object {
+                      "backgroundColor": undefined,
+                      "color": undefined,
+                      "direction": undefined,
+                      "fontSize": undefined,
+                      "textAlign": undefined,
+                    }
+                  }
+                >
+                  Start writing or type / to choose a block
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>,
+      ]
+       
+    </div>,
+    "",
+    "",
+    "",
+  ],
+]
+`;
