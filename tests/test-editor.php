@@ -2,7 +2,7 @@
 /**
  * Class EditorTest
  *
- * @package Test_Travis
+ * @package Tests
  */
 
 use Gutenberg_Samples\Classes\Models\Editor;
