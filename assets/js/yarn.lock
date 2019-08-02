@@ -954,19 +954,19 @@
   resolved "https://registry.yarnpkg.com/@tannin/postfix/-/postfix-1.0.2.tgz#fbb723e79603add30f5d8a08a626c2970d984857"
   integrity sha512-Nggtk7/ljfNPpAX8CjxxLkMKuO6u2gH1ozmTvGclWF2pNcxTf6YGghYNYNWZRKrimXGhQ8yZqvAHep7h80K04g==
 
-"@technote-space/gutenberg-utils@^1.0.23":
-  version "1.0.23"
-  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-1.0.23.tgz#b64645917a55f1f09ad8f665f219e844f527aa22"
-  integrity sha512-LToQgXl32TlssobbnEHZBaolyasecMluM0Z6u9RotAthBhihagbIvyLrpzcCMqPfDEKcoEydlvIc/L6+0DAjfg==
+"@technote-space/gutenberg-utils@^1.0.26":
+  version "1.0.26"
+  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-1.0.26.tgz#8911608b5a3c848a6d2713da9259c4fa18f7470b"
+  integrity sha512-CLGzHqBWx8Wx/ffH6P3YZ9TaXvi73nPGnlFCwgp/0mSCi2Sotq+shuvNzcErmAlGPFsfq+nqRXryZzGME3nksA==
   dependencies:
     classnames "^2.2.6"
 
-"@technote-space/register-grouped-format-type@^1.0.20":
-  version "1.0.20"
-  resolved "https://registry.yarnpkg.com/@technote-space/register-grouped-format-type/-/register-grouped-format-type-1.0.20.tgz#9c21865a21c5b3146ba3bab66f1a58e6e023a867"
-  integrity sha512-wyNEmN2MUKy9kcy7EdUCOhEylIgodcUoj8HtC0aDmB8buxyaDlNVrVNuH2k5ApfTOOuRFx4ARH3l5bA4iPK7YQ==
+"@technote-space/register-grouped-format-type@^1.0.21":
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/@technote-space/register-grouped-format-type/-/register-grouped-format-type-1.0.21.tgz#516fc43a67f2ad2c47b735c8de23e641f8b21ea3"
+  integrity sha512-cHG5v6yignC8qKqduA6t9ARb5qOakfbQC2XDxvmrNT0uQN01fffLHEfaxkywSpkQGDKz+RGHdcUAK+mQzQa8tQ==
   dependencies:
-    "@technote-space/gutenberg-utils" "^1.0.23"
+    "@technote-space/gutenberg-utils" "^1.0.26"
 
 "@types/babel__core@^7.1.0":
   version "7.1.2"
