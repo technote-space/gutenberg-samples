@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         with:
-          fetch-depth: 1
+          fetch-depth: 2
       - name: Install Package dependencies
         run: composer prepare:js
       - name: Check code style
@@ -33,7 +33,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         with:
-          fetch-depth: 1
+          fetch-depth: 2
       - name: Prepare setting
         run: git clone --depth=1 https://github.com/wp-content-framework/travis-ci.git travis-ci && bash travis-ci/bin/prepare.sh
         env:
@@ -56,7 +56,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         with:
-          fetch-depth: 1
+          fetch-depth: 2
       - name: Prepare setting
         run: git clone --depth=1 https://github.com/wp-content-framework/travis-ci.git travis-ci && bash travis-ci/bin/prepare.sh
         env:
@@ -81,7 +81,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         with:
-          fetch-depth: 1
+          fetch-depth: 2
       - name: Install Package dependencies
         run: composer prepare:js
       - name: Run tests
@@ -106,7 +106,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         with:
-          fetch-depth: 1
+          fetch-depth: 2
       - name: Switch PHP version
         env:
           PHP_VERSION: ${{ matrix.php }}
