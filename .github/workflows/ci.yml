@@ -97,18 +97,16 @@ jobs:
     name: PHPUnit
     needs: [phpcs, phpmd]
     runs-on: ubuntu-16.04
+    services:
+      mysql:
+        image: mysql
+        ports:
+          - 3306
     strategy:
       matrix:
         php: ['7.0', '7.3', '5.6']
         WP_VERSION: ['latest', '5.2', '5.0']
         WP_MULTISITE: [0, 1]
-    services:
-      mysql:
-        image: mysql
-        env:
-          MYSQL_ROOT_PASSWORD: root
-        ports:
-          - 3306
     steps:
       - uses: actions/checkout@v1
         with:
@@ -122,11 +120,11 @@ jobs:
         env:
           CI: 1
           TRAVIS_BUILD_DIR: ${{ github.workspace }}
-          DB_PASS: root
       - name: Run tests
         run: bash travis-ci/bin/php/wp-test.sh
         env:
           CI: 1
+          DB_PASS: root
           TRAVIS_BUILD_DIR: ${{ github.workspace }}
           WP_VERSION: ${{ matrix.WP_VERSION }}
           WP_MULTISITE: ${{ matrix.WP_MULTISITE }}
