@@ -106,7 +106,6 @@ jobs:
       mysql:
         image: mysql
         env:
-          MYSQL_ROOT_PASSWORD: ''
           MYSQL_ALLOW_EMPTY_PASSWORD: yes
         ports:
           - 3306
@@ -114,7 +113,6 @@ jobs:
       - uses: actions/checkout@v1
         with:
           fetch-depth: 2
-      - run: ls -lat /usr/bin | grep php
       - name: Switch PHP version
         env:
           PHP_VERSION: ${{ matrix.php }}
