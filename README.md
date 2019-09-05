@@ -14,8 +14,18 @@ Gutenberg Samples
 
 [Latest version](https://github.com/technote-space/gutenberg-samples/releases/latest/download/gutenberg-samples.zip)
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Contents](#contents)
+  - [dropdown1](#dropdown1)
+  - [dropdown2](#dropdown2)
+- [Requirements](#requirements)
+- [Author](#author)
+- [Plugin framework](#plugin-framework)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Contents
 ### dropdown1  
