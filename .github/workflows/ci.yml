@@ -102,14 +102,22 @@ jobs:
         php: [7.0, 7.3, 5.6]
         WP_VERSION: [latest, 5.2, 5.0]
         WP_MULTISITE: [0, 1]
+    services:
+      mysql:
+        image: mysql
+        env:
+          MYSQL_ROOT_PASSWORD: ''
+        ports:
+          - 3306
     steps:
       - uses: actions/checkout@v1
         with:
           fetch-depth: 2
+      - run: ls -lat /usr/bin | grep php
       - name: Switch PHP version
         env:
           PHP_VERSION: ${{ matrix.php }}
-        run: sudo ln -sf "/usr/bin/php$PHP_VERSION" /etc/alternatives/php && sudo ln -s "/usr/bin/php$PHP_VERSION" /usr/bin/php
+        run: sudo ln -sf "/usr/bin/php$PHP_VERSION" /etc/alternatives/php
       - name: Prepare setting
         run: git clone --depth=1 https://github.com/wp-content-framework/travis-ci.git travis-ci && bash travis-ci/bin/prepare.sh
         env:
