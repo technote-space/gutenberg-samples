@@ -106,7 +106,7 @@ jobs:
       mysql:
         image: mysql
         env:
-          MYSQL_ALLOW_EMPTY_PASSWORD: yes
+          MYSQL_ROOT_PASSWORD: root
         ports:
           - 3306
     steps:
@@ -122,6 +122,7 @@ jobs:
         env:
           CI: 1
           TRAVIS_BUILD_DIR: ${{ github.workspace }}
+          DB_PASS: root
       - name: Run tests
         run: bash travis-ci/bin/php/wp-test.sh
         env:
