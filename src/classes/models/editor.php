@@ -60,9 +60,13 @@ class Editor implements \WP_Framework_Core\Interfaces\Singleton, \WP_Framework_C
 			'wp-components',
 			'wp-core-data',
 			'wp-data',
+			'wp-dom',
 			'wp-editor',
 			'wp-element',
+			'wp-format-library',
 			'wp-i18n',
+			'wp-is-shallow-equal',
+			'wp-keycodes',
 			'wp-rich-text',
 			'wp-url',
 		], [ 'lodash' ] ), $this->app->get_plugin_version(), false );

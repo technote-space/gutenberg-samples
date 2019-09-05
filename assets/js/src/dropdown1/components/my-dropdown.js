@@ -8,7 +8,7 @@ const MyDropdown = () => <BlockFormatControls>
 			<MyDropdownControls.Slot>
 				{ fills => <DropdownMenu
 					icon='admin-customizer'
-					position="bottom left"
+					popoverProps={ ( { position: 'bottom left' } ) }
 					label='dropdown'
 					controls={ fills.map( ( [ { props } ] ) => props ) }
 				/> }

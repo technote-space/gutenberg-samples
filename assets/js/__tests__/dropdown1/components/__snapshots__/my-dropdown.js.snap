@@ -31,6 +31,7 @@ Array [
             onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
+            onMouseDown={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
           >
@@ -43,6 +44,7 @@ Array [
               onClick={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
+              onMouseDown={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
               type="button"
@@ -74,130 +76,139 @@ Array [
               onFocus={[Function]}
             >
               <div
-                className="components-popover components-dropdown-menu__popover is-bottom is-left components-animate__appear is-from-right is-from-top"
-                onKeyDown={[Function]}
+                onBlur={[Function]}
+                onFocus={[Function]}
                 onMouseDown={[Function]}
-                style={
-                  Object {
-                    "left": undefined,
-                    "top": undefined,
-                    "visibility": undefined,
-                  }
-                }
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchStart={[Function]}
               >
                 <div
-                  className="components-popover__content"
+                  className="components-popover components-dropdown-menu__popover is-bottom is-left components-animate__appear is-from-right is-from-top"
+                  onKeyDown={[Function]}
+                  onMouseDown={[Function]}
                   style={
                     Object {
-                      "maxHeight": undefined,
-                      "maxWidth": undefined,
+                      "left": undefined,
+                      "top": undefined,
+                      "visibility": undefined,
                     }
                   }
-                  tabIndex="-1"
                 >
-                  <ForwardRef(NavigableMenu)
-                    aria-label="dropdown"
-                    className="components-dropdown-menu__menu"
-                    role="menu"
+                  <div
+                    className="components-popover__content"
+                    style={
+                      Object {
+                        "maxHeight": undefined,
+                        "maxWidth": undefined,
+                      }
+                    }
+                    tabIndex="-1"
                   >
-                    <ForwardRef(NavigableContainer)
+                    <ForwardRef(NavigableMenu)
                       aria-label="dropdown"
-                      aria-orientation="vertical"
                       className="components-dropdown-menu__menu"
-                      eventToOffset={[Function]}
-                      onlyBrowserTabstops={false}
                       role="menu"
-                      stopNavigationEvents={true}
                     >
-                      <div
+                      <ForwardRef(NavigableContainer)
                         aria-label="dropdown"
                         aria-orientation="vertical"
                         className="components-dropdown-menu__menu"
+                        eventToOffset={[Function]}
+                        onlyBrowserTabstops={false}
                         role="menu"
+                        stopNavigationEvents={true}
                       >
-                        <ForwardRef(IconButton)
-                          className="components-dropdown-menu__menu-item is-active"
-                          icon="admin-customizer"
-                          key="0,0"
-                          onClick={[Function]}
-                          role="menuitem"
+                        <div
+                          aria-label="dropdown"
+                          aria-orientation="vertical"
+                          className="components-dropdown-menu__menu"
+                          role="menu"
                         >
-                          <ForwardRef(Button)
-                            className="components-icon-button components-dropdown-menu__menu-item is-active has-text"
+                          <ForwardRef(IconButton)
+                            className="components-dropdown-menu__menu-item is-active"
+                            icon="admin-customizer"
+                            key="0,0"
                             onClick={[Function]}
                             role="menuitem"
                           >
-                            <button
-                              className="components-button components-icon-button components-dropdown-menu__menu-item is-active has-text"
+                            <ForwardRef(Button)
+                              className="components-icon-button components-dropdown-menu__menu-item is-active has-text"
                               onClick={[Function]}
                               role="menuitem"
-                              type="button"
                             >
-                              <svg
-                                aria-hidden="true"
-                                className="dashicon dashicons-admin-customizer"
-                                focusable="false"
-                                height={20}
-                                role="img"
-                                viewBox="0 0 20 20"
-                                width={20}
-                                xmlns="http://www.w3.org/2000/svg"
+                              <button
+                                className="components-button components-icon-button components-dropdown-menu__menu-item is-active has-text"
+                                onClick={[Function]}
+                                role="menuitem"
+                                type="button"
                               >
-                                <path
-                                  d="M18.33 3.57s.27-.8-.31-1.36c-.53-.52-1.22-.24-1.22-.24-.61.3-5.76 3.47-7.67 5.57-.86.96-2.06 3.79-1.09 4.82.92.98 3.96-.17 4.79-1 2.06-2.06 5.21-7.17 5.5-7.79zM1.4 17.65c2.37-1.56 1.46-3.41 3.23-4.64.93-.65 2.22-.62 3.08.29.63.67.8 2.57-.16 3.46-1.57 1.45-4 1.55-6.15.89z"
-                                />
-                              </svg>
-                              <div
-                                className="test1"
-                              >
-                                test1
-                              </div>
-                            </button>
-                          </ForwardRef(Button)>
-                        </ForwardRef(IconButton)>
-                        <ForwardRef(IconButton)
-                          className="components-dropdown-menu__menu-item"
-                          icon="admin-customizer"
-                          key="0,1"
-                          onClick={[Function]}
-                          role="menuitem"
-                        >
-                          <ForwardRef(Button)
-                            className="components-icon-button components-dropdown-menu__menu-item has-text"
+                                <svg
+                                  aria-hidden="true"
+                                  className="dashicon dashicons-admin-customizer"
+                                  focusable="false"
+                                  height={20}
+                                  role="img"
+                                  viewBox="0 0 20 20"
+                                  width={20}
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M18.33 3.57s.27-.8-.31-1.36c-.53-.52-1.22-.24-1.22-.24-.61.3-5.76 3.47-7.67 5.57-.86.96-2.06 3.79-1.09 4.82.92.98 3.96-.17 4.79-1 2.06-2.06 5.21-7.17 5.5-7.79zM1.4 17.65c2.37-1.56 1.46-3.41 3.23-4.64.93-.65 2.22-.62 3.08.29.63.67.8 2.57-.16 3.46-1.57 1.45-4 1.55-6.15.89z"
+                                  />
+                                </svg>
+                                <div
+                                  className="test1"
+                                >
+                                  test1
+                                </div>
+                              </button>
+                            </ForwardRef(Button)>
+                          </ForwardRef(IconButton)>
+                          <ForwardRef(IconButton)
+                            className="components-dropdown-menu__menu-item"
+                            icon="admin-customizer"
+                            key="0,1"
                             onClick={[Function]}
                             role="menuitem"
                           >
-                            <button
-                              className="components-button components-icon-button components-dropdown-menu__menu-item has-text"
+                            <ForwardRef(Button)
+                              className="components-icon-button components-dropdown-menu__menu-item has-text"
                               onClick={[Function]}
                               role="menuitem"
-                              type="button"
                             >
-                              <svg
-                                aria-hidden="true"
-                                className="dashicon dashicons-admin-customizer"
-                                focusable="false"
-                                height={20}
-                                role="img"
-                                viewBox="0 0 20 20"
-                                width={20}
-                                xmlns="http://www.w3.org/2000/svg"
+                              <button
+                                className="components-button components-icon-button components-dropdown-menu__menu-item has-text"
+                                onClick={[Function]}
+                                role="menuitem"
+                                type="button"
                               >
-                                <path
-                                  d="M18.33 3.57s.27-.8-.31-1.36c-.53-.52-1.22-.24-1.22-.24-.61.3-5.76 3.47-7.67 5.57-.86.96-2.06 3.79-1.09 4.82.92.98 3.96-.17 4.79-1 2.06-2.06 5.21-7.17 5.5-7.79zM1.4 17.65c2.37-1.56 1.46-3.41 3.23-4.64.93-.65 2.22-.62 3.08.29.63.67.8 2.57-.16 3.46-1.57 1.45-4 1.55-6.15.89z"
-                                />
-                              </svg>
-                              <div
-                                className="test2"
-                              >
-                                test2
-                              </div>
-                            </button>
-                          </ForwardRef(Button)>
-                        </ForwardRef(IconButton)>
-                      </div>
-                    </ForwardRef(NavigableContainer)>
-                  </ForwardRef(NavigableMenu)>
+                                <svg
+                                  aria-hidden="true"
+                                  className="dashicon dashicons-admin-customizer"
+                                  focusable="false"
+                                  height={20}
+                                  role="img"
+                                  viewBox="0 0 20 20"
+                                  width={20}
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M18.33 3.57s.27-.8-.31-1.36c-.53-.52-1.22-.24-1.22-.24-.61.3-5.76 3.47-7.67 5.57-.86.96-2.06 3.79-1.09 4.82.92.98 3.96-.17 4.79-1 2.06-2.06 5.21-7.17 5.5-7.79zM1.4 17.65c2.37-1.56 1.46-3.41 3.23-4.64.93-.65 2.22-.62 3.08.29.63.67.8 2.57-.16 3.46-1.57 1.45-4 1.55-6.15.89z"
+                                  />
+                                </svg>
+                                <div
+                                  className="test2"
+                                >
+                                  test2
+                                </div>
+                              </button>
+                            </ForwardRef(Button)>
+                          </ForwardRef(IconButton)>
+                        </div>
+                      </ForwardRef(NavigableContainer)>
+                    </ForwardRef(NavigableMenu)>
+                  </div>
                 </div>
               </div>
             </div>
@@ -239,7 +250,7 @@ Array [
                   contentEditable={true}
                   dangerouslySetInnerHTML={
                     Object {
-                      "__html": "﻿<span data-rich-text-placeholder=\\"Start writing or type / to choose a block\\"></span>",
+                      "__html": "﻿<span data-rich-text-placeholder=\\"Start writing or type / to choose a block\\" contenteditable=\\"false\\"></span>",
                     }
                   }
                   onBlur={[Function]}
@@ -247,8 +258,11 @@ Array [
                   onFocus={[Function]}
                   onInput={[Function]}
                   onKeyDown={[Function]}
+                  onKeyUp={[Function]}
                   onMouseDown={[Function]}
+                  onMouseUp={[Function]}
                   onPaste={[Function]}
+                  onTouchEnd={[Function]}
                   onTouchStart={[Function]}
                   role="textbox"
                   style={
@@ -257,7 +271,6 @@ Array [
                       "color": undefined,
                       "direction": undefined,
                       "fontSize": undefined,
-                      "textAlign": undefined,
                       "whiteSpace": "pre-wrap",
                     }
                   }
@@ -308,6 +321,7 @@ Array [
             onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
+            onMouseDown={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
           >
@@ -320,6 +334,7 @@ Array [
               onClick={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
+              onMouseDown={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
               type="button"
@@ -377,7 +392,7 @@ Array [
                   contentEditable={true}
                   dangerouslySetInnerHTML={
                     Object {
-                      "__html": "﻿<span data-rich-text-placeholder=\\"Start writing or type / to choose a block\\"></span>",
+                      "__html": "﻿<span data-rich-text-placeholder=\\"Start writing or type / to choose a block\\" contenteditable=\\"false\\"></span>",
                     }
                   }
                   onBlur={[Function]}
@@ -385,8 +400,11 @@ Array [
                   onFocus={[Function]}
                   onInput={[Function]}
                   onKeyDown={[Function]}
+                  onKeyUp={[Function]}
                   onMouseDown={[Function]}
+                  onMouseUp={[Function]}
                   onPaste={[Function]}
+                  onTouchEnd={[Function]}
                   onTouchStart={[Function]}
                   role="textbox"
                   style={
@@ -395,7 +413,6 @@ Array [
                       "color": undefined,
                       "direction": undefined,
                       "fontSize": undefined,
-                      "textAlign": undefined,
                       "whiteSpace": "pre-wrap",
                     }
                   }
