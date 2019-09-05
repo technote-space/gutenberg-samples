@@ -109,7 +109,7 @@ jobs:
       - name: Switch PHP version
         env:
           PHP_VERSION: ${{ matrix.php }}
-        run: sudo ln -sf "/usr/bin/php$PHP_VERSION" /etc/alternatives/php
+        run: sudo ln -sf "/usr/bin/php$PHP_VERSION" /etc/alternatives/php && sudo ln -s "/usr/bin/php$PHP_VERSION" /usr/bin/php
       - name: Prepare setting
         run: git clone --depth=1 https://github.com/wp-content-framework/travis-ci.git travis-ci && bash travis-ci/bin/prepare.sh
         env:
