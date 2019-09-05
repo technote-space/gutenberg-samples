@@ -31,8 +31,6 @@ stages:
     if: branch = master and tag IS blank and type IN (pull_request, api)
   - name: test trunk
     if: branch = master and tag IS blank and type IN (pull_request, api, cron)
-#  - name: prepare
-#    if: branch = master and tag IS blank and type IN (pull_request, api)
   - name: deploy
     if: tag IS present
 
@@ -69,40 +67,11 @@ jobs:
       script: bash travis-ci/bin/php/wp-test.sh
     - stage: test
       language: php
-      php: '7.3'
-      env:
-        - WP_VERSION=latest
-        - WP_MULTISITE=1
-      script: bash travis-ci/bin/php/wp-test.sh
-    - stage: test
-      language: php
-      php: '7.2'
-      env: WP_VERSION=latest
-      script: bash travis-ci/bin/php/wp-test.sh
-    - stage: test
-      language: php
       php: '7.2'
       env:
         - WP_VERSION=5.2
         - WP_MULTISITE=1
         - COVERAGE_REPORT=1
-      script: bash travis-ci/bin/php/wp-test.sh
-    - stage: test
-      language: php
-      php: '7.1'
-      env: WP_VERSION=latest
-      script: bash travis-ci/bin/php/wp-test.sh
-    - stage: test
-      language: php
-      php: '7.1'
-      env: WP_VERSION=5.1
-      script: bash travis-ci/bin/php/wp-test.sh
-    - stage: test
-      language: php
-      php: '7.0'
-      env:
-        - WP_VERSION=latest
-        - WP_MULTISITE=1
       script: bash travis-ci/bin/php/wp-test.sh
     - stage: test
       language: php
@@ -118,49 +87,14 @@ jobs:
         - WP_VERSION=5.2
         - WP_MULTISITE=1
         - COVERAGE_REPORT=1
-      script: bash travis-ci/bin/php/wp-test.sh
-    - stage: test
-      language: php
-      php: '5.6'
-      env: WP_VERSION=3.9
       script: bash travis-ci/bin/php/wp-test.sh
 
-    - stage: test
-      language: node_js
-      node_js: '10'
-      dist: trusty
-      script: bash travis-ci/bin/js/js-test.sh
     - stage: test
       language: node_js
       node_js: '11'
       dist: trusty
       env: COVERAGE_REPORT=1
       script: bash travis-ci/bin/js/js-test.sh
-
-
-    - stage: test trunk
-      language: php
-      php: '7.3'
-      env:
-        - WP_VERSION=trunk
-        - WP_MULTISITE=1
-        - ACTIVATE_POPULAR_PLUGINS=1
-      script: bash travis-ci/bin/php/wp-test.sh
-
-    - stage: test trunk
-      language: php
-      php: '5.6'
-      env: WP_VERSION=trunk
-      script: bash travis-ci/bin/php/wp-test.sh
-
-
-#    - stage: prepare
-#      language: node_js
-#      node_js: '11'
-#      dist: trusty
-#      script:
-#        - source travis-ci/bin/deploy/env.sh
-#        - bash travis-ci/bin/deploy/wp-check-diff.sh
 
 
     - stage: deploy
@@ -179,24 +113,9 @@ jobs:
         api_key:
           secure: u/TcTu8qT+XbB8XX2hGitscwb64/wGd3uvRr0sMR8irhBSN0d+Q9kvj+lIlfr2RYgXFOCgJoMWYBD2ss0O5lhbsT4g9pRiP2kw/Q0zbB0XqnG87rZRQDRzUz+i8jrMpL4w70+g34KSNYUO6mL5O4vFfpfGHawBGRAZHThpVVlHAdG4Nmtw3Q8lSnWjnoSogOK1g1iWssZg7DKizkm6Dg5nMM3INzdvKbEoWUywX3wpl8xPvMfI9XlPjn3sAfQyPWPAtGhPcyYLxwOdNKmFXc0dA2ZG0lFwMnCYaY2HMGdkSyZN/nQjDqKDUdxLfIDdYshRAcfjBG0/JoaU5i1IxaMfbqLR8vyTzTAakM1AGnLDijUkh2Pf9vrxL+rdJJu54XiGGjLZG5e8WIuEDGpt+UYfReFRbhOI6uWOFJXQgbD7Cp1BuPmMdPRr4NrNRLPw7vIhXYY5UCVKc83xt9tU35uQBj7gfYSSBHT9EdIFoUSH/PK8InXDOGy17OKB1vLLEiAJwgUFjMgPfuE0RUpGYDrDBBja7zHI/OxAvX+CLsWa81qzyjD3jY87cykhUqJxKO7K82/lr3dkRu6iIFNOJEdh01395RHEXGDOFP6OD/rEGq60H9no9dO8g3OgUURO/QhZQNoIRFNA0Co3A/hyJ2/HHaDtyF7rirnba3c/in2vQ=
         file: ${RELEASE_FILE}
-        body: ${RELEASE_BODY}
         overwrite: true
         on:
           tags: true
-
-#    - stage: deploy
-#      language: node_js
-#      node_js: '11'
-#      dist: trusty
-#      script: skip
-#      before_deploy:
-#        - source travis-ci/bin/deploy/env.sh
-#      deploy:
-#        provider: script
-#        skip_cleanup: true
-#        script: bash travis-ci/bin/deploy/wp-release.sh
-#        on:
-#          tags: true
 
     - stage: deploy
       language: node_js
@@ -219,9 +138,3 @@ jobs:
         local_dir: ${GH_PAGES_DIR}
         on:
           tags: true
-
-  allow_failures:
-    - env: WP_VERSION=5.1
-    - env: WP_VERSION=5.0
-    - env: WP_VERSION=4.9
-    - env: WP_VERSION=3.9
