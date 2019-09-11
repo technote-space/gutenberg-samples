@@ -3,7 +3,7 @@ Contributors: technote0space
 Tags: gutenberg, hide, block, temporarily
 Requires at least: 5.2
 Requires PHP: 5.6
-Tested up to: 5.2
+Tested up to: 5.2.3
 Stable tag: 0.1.2
 Donate link: https://paypal.me/technote0space
 License: GPLv2 or later
