@@ -14,8 +14,7 @@
     "build:dropdown1": "webpack --mode production --config dropdown1.config.js",
     "build:dropdown2": "webpack --mode production --config dropdown2.config.js",
     "develop:dropdown1": "webpack --mode development --config dropdown1.config.js",
-    "develop:dropdown2": "webpack --mode development --config dropdown2.config.js",
-    "coveralls": "cat ./coverage/lcov.info | coveralls"
+    "develop:dropdown2": "webpack --mode development --config dropdown2.config.js"
   },
   "author": "Technote <technote.space@gmail.com> (https://technote.space)",
   "license": "GPL-3.0",
@@ -45,7 +44,6 @@
     "@wordpress/server-side-render": "^1.3.2",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
-    "coveralls": "^3.0.7",
     "duplicate-package-checker-webpack-plugin": "^3.0.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
