@@ -6,7 +6,8 @@
     "start": "yarn build",
     "test": "yarn lint && yarn cover",
     "test:update": "yarn lint && yarn cover:update",
-    "lint": "eslint src/**/**/*.js && eslint __tests__/**/**/*.js",
+    "lint": "eslint src/**/**/*.js __tests__/**/**/*.js",
+    "lint:fix": "eslint --fix src/**/**/*.ts __tests__/**/**/*.ts",
     "cover": "jest --coverage",
     "cover:update": "jest --coverage --updateSnapshot",
     "develop": "yarn develop:dropdown1 && yarn develop:dropdown2",
@@ -14,7 +15,8 @@
     "build:dropdown1": "webpack --mode production --config dropdown1.config.js",
     "build:dropdown2": "webpack --mode production --config dropdown2.config.js",
     "develop:dropdown1": "webpack --mode development --config dropdown1.config.js",
-    "develop:dropdown2": "webpack --mode development --config dropdown2.config.js"
+    "develop:dropdown2": "webpack --mode development --config dropdown2.config.js",
+    "update": "ncu -u && yarn install && yarn upgrade && yarn audit"
   },
   "author": "Technote <technote.space@gmail.com> (https://technote.space)",
   "license": "GPL-3.0",
