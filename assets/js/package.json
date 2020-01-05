@@ -21,7 +21,7 @@
   "author": "Technote <technote.space@gmail.com> (https://technote.space)",
   "license": "GPL-3.0",
   "dependencies": {
-    "@technote-space/register-grouped-format-type": "^1.2.2"
+    "@technote-space/register-grouped-format-type": "^1.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
@@ -58,7 +58,7 @@
     "mousetrap": "^1.6.3",
     "react-autosize-textarea": "^7.0.0",
     "speed-measure-webpack-plugin": "^1.3.1",
-    "webpack": "^4.41.4",
+    "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   }
 }
