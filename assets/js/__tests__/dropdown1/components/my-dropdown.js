@@ -36,7 +36,7 @@ describe( 'MyDropdown', () => {
 			<SlotFillProvider>
 				<BlockFormatControls.Slot/>
 				<BlockEdit
-					name="core/paragraph"
+					name="core/quote"
 					isSelected={ true }
 					attributes={ ( {
 						className: 'test-block-edit',
