@@ -61,7 +61,7 @@
       "phpcs --standard=./phpcs.xml"
     ],
     "phpmd": [
-      "phpmd ./src/,./configs/,./tests/ text phpmd.xml"
+      "phpmd ./src/,./configs/,./tests/ ansi phpmd.xml"
     ],
     "phpunit": [
       "phpunit --stop-on-failure --colors=always"
