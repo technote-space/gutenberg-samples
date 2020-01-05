@@ -10,7 +10,7 @@ Array [
       className="components-toolbar"
     >
       <div
-        className="components-dropdown components-dropdown-menu"
+        className="components-dropdown components-dropdown-menu components-dropdown-button"
       >
         <ForwardRef(IconButton)
           aria-expanded={true}
@@ -329,7 +329,7 @@ Array [
       className="components-toolbar"
     >
       <div
-        className="components-dropdown components-dropdown-menu"
+        className="components-dropdown components-dropdown-menu components-dropdown-button"
       >
         <ForwardRef(IconButton)
           aria-expanded={false}
