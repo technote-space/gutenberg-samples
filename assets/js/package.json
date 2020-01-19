@@ -1,6 +1,6 @@
 {
   "name": "gutenberg-samples",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "gutenberg samples",
   "scripts": {
     "start": "yarn build",
@@ -21,7 +21,7 @@
   "author": "Technote <technote.space@gmail.com> (https://technote.space)",
   "license": "GPL-3.0",
   "dependencies": {
-    "@technote-space/register-grouped-format-type": "^1.2.3"
+    "@technote-space/register-grouped-format-type": "^1.2.4"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",
