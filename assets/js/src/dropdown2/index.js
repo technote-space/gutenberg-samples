@@ -1,4 +1,4 @@
-import {Common, RichText } from '@technote-space/register-grouped-format-type';
+import { Common, RichText } from '@technote-space/register-grouped-format-type';
 
 const { registerFormatTypeGroup, registerGroupedFormatType, getRemoveFormatButton } = RichText;
 const { getToolbarButtonProps, getColorButtonProps, getFontSizesButtonProps } = Common.Helpers;
