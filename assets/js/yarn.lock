@@ -1061,10 +1061,10 @@
   resolved "https://registry.yarnpkg.com/@tannin/postfix/-/postfix-1.0.3.tgz#f8388e8f5add62dbec3d503127eeef19fedc1fcc"
   integrity sha512-80uoGtphTH3vDZlJgE2xJh3qBWMAlCXq8wN8WLOxHJjms0A38vkbXOXiYMIabgnIJVc1vCcZVQa2pHt+X3AF5Q==
 
-"@technote-space/gutenberg-utils@^1.3.4":
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-1.3.4.tgz#b807cfc32e9ee82778e1671b55846bdd369fb03a"
-  integrity sha512-KrEwYIwmNyxrD2AF0vcVExqJAKPAf4g9KZbhYypANPLoG/kg/wffcoKAi852AAql89lKwUcajH3w5OlqYDcC0w==
+"@technote-space/gutenberg-utils@^1.3.5":
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-1.3.5.tgz#7ab12f78a086cd182e27a8d5678f32e471fdfdac"
+  integrity sha512-wW9jCWcLU2E4NnWvlyVAfCLgUVqsbTGF26v284rwLt+IF1pS279TD1yvOQWOr36tzhfHRj/XXleyfnfW/v867w==
   dependencies:
     "@babel/core" "^7.8.3"
     "@babel/plugin-proposal-object-rest-spread" "^7.8.3"
@@ -1087,10 +1087,10 @@
     webpack "^4.41.5"
     webpack-cli "~3.3.10"
 
-"@technote-space/register-grouped-format-type@^1.2.5":
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/@technote-space/register-grouped-format-type/-/register-grouped-format-type-1.2.5.tgz#dd56a356990aafd41361561dd8e3d69613bb6b88"
-  integrity sha512-usWbArOOYHyEZChofg3+2y0VCFhtt5hjVJag7wemTiHtDi7+T6n0GK0k2YMZkgq+ncCa2/i1UCm65lGm2jP3HA==
+"@technote-space/register-grouped-format-type@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@technote-space/register-grouped-format-type/-/register-grouped-format-type-1.2.6.tgz#dc40dd72873d1c8f501b39420746ed5616d5e44b"
+  integrity sha512-a9mYuqiBMz0Tb2VJ51VcBNMUwxcG2OiJaSaNdUzxq6Zna5XrCM1weUTNoG+7A820M9vqam0f0RWLbZtob+XeGg==
   dependencies:
     "@babel/core" "^7.8.3"
     "@babel/plugin-proposal-object-rest-spread" "^7.8.3"
@@ -1100,7 +1100,7 @@
     "@babel/polyfill" "^7.8.3"
     "@babel/preset-env" "^7.8.3"
     "@babel/register" "^7.8.3"
-    "@technote-space/gutenberg-utils" "^1.3.4"
+    "@technote-space/gutenberg-utils" "^1.3.5"
     babel-jest "^24.9.0"
     babel-loader "^8.0.6"
     duplicate-package-checker-webpack-plugin "^3.0.0"
