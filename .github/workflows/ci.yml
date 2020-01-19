@@ -61,6 +61,10 @@ jobs:
       - uses: technote-space/get-diff-action@v1
         id: git-diff
         with:
+          PREFIX_FILTER: |
+            configs/
+            srrc/
+            tests/
           SUFFIX_FILTER: .php
       - name: Get Composer Cache Directory
         id: composer-cache
@@ -97,6 +101,10 @@ jobs:
       - uses: technote-space/get-diff-action@v1
         id: git-diff
         with:
+          PREFIX_FILTER: |
+            configs/
+            srrc/
+            tests/
           SUFFIX_FILTER: .php
       - name: Get Composer Cache Directory
         id: composer-cache
@@ -195,6 +203,10 @@ jobs:
       - uses: technote-space/get-diff-action@v1
         id: git-diff
         with:
+          PREFIX_FILTER: |
+            configs/
+            srrc/
+            tests/
           SUFFIX_FILTER: .php
           FILES: composer.lock
       - name: Get Composer Cache Directory
