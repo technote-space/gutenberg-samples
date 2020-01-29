@@ -61,7 +61,7 @@ jobs:
         with:
           PREFIX_FILTER: |
             configs/
-            srrc/
+            src/
             tests/
           SUFFIX_FILTER: .php
       - name: Get Composer Cache Directory
@@ -100,7 +100,7 @@ jobs:
         with:
           PREFIX_FILTER: |
             configs/
-            srrc/
+            src/
             tests/
           SUFFIX_FILTER: .php
       - name: Get Composer Cache Directory
@@ -173,7 +173,10 @@ jobs:
         run: bash travis-ci/bin/js/js-test.sh
         if: env.GIT_DIFF || github.event_name == 'push'
       - name: Codecov
-        run: curl -s https://codecov.io/bash | bash -s -- -t $CODECOV_TOKEN -f $COVERAGE_FILE
+        run: |
+          if [ -n "$CODECOV_TOKEN" ]; then
+            curl -s https://codecov.io/bash | bash -s -- -t $CODECOV_TOKEN -f $COVERAGE_FILE
+          fi
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
           COVERAGE_FILE: ./assets/js/coverage/lcov.info
@@ -197,7 +200,7 @@ jobs:
     strategy:
       matrix:
         php: ['7.0', '7.3', '5.6']
-        WP_VERSION: ['latest', '5.0']
+        WP_VERSION: ['latest', '5.2', '5.0']
         WP_MULTISITE: ['0', '1']
         include:
           - php: '7.3'
@@ -212,10 +215,15 @@ jobs:
         with:
           PREFIX_FILTER: |
             configs/
-            srrc/
+            src/
             tests/
           SUFFIX_FILTER: .php
           FILES: composer.lock
+      - name: Switch PHP version
+        env:
+          PHP_VERSION: ${{ matrix.php }}
+        run: sudo ln -sf "/usr/bin/php$PHP_VERSION" /etc/alternatives/php
+        if: env.GIT_DIFF || github.event_name == 'push'
       - name: Get Composer Cache Directory
         id: composer-cache
         run: |
@@ -227,11 +235,6 @@ jobs:
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
             ${{ runner.os }}-composer-
-        if: env.GIT_DIFF || github.event_name == 'push'
-      - name: Switch PHP version
-        env:
-          PHP_VERSION: ${{ matrix.php }}
-        run: sudo ln -sf "/usr/bin/php$PHP_VERSION" /etc/alternatives/php
         if: env.GIT_DIFF || github.event_name == 'push'
       - name: Prepare setting
         run: git clone --depth=1 https://github.com/wp-content-framework/travis-ci.git travis-ci && bash travis-ci/bin/prepare.sh
@@ -249,7 +252,10 @@ jobs:
           ACTIVATE_POPULAR_PLUGINS: ${{ matrix.ACTIVATE_POPULAR_PLUGINS }}
         if: env.GIT_DIFF || github.event_name == 'push'
       - name: Codecov
-        run: curl -s https://codecov.io/bash | bash -s -- -t $CODECOV_TOKEN -f $COVERAGE_FILE
+        run: |
+          if [ -n "$CODECOV_TOKEN" ]; then
+            curl -s https://codecov.io/bash | bash -s -- -t $CODECOV_TOKEN -f $COVERAGE_FILE
+          fi
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
           COVERAGE_FILE: ./coverage/clover.xml
