@@ -185,7 +185,10 @@ Array [
   </div>,
   Array [
     Array [
-      "",
+      Array [
+        "",
+        "",
+      ],
       <blockquote
         className="wp-block-quote test-block-edit"
       >
@@ -315,9 +318,18 @@ Array [
         </ForwardRef(RichTextWrapper)>
       </blockquote>,
     ],
-    "",
-    "",
-    "",
+    Array [
+      "",
+      "",
+    ],
+    Array [
+      "",
+      "",
+    ],
+    Array [
+      "",
+      "",
+    ],
   ],
 ]
 `;
@@ -379,7 +391,10 @@ Array [
   </div>,
   Array [
     Array [
-      "",
+      Array [
+        "",
+        "",
+      ],
       <blockquote
         className="wp-block-quote test-block-edit"
       >
@@ -509,9 +524,18 @@ Array [
         </ForwardRef(RichTextWrapper)>
       </blockquote>,
     ],
-    "",
-    "",
-    "",
+    Array [
+      "",
+      "",
+    ],
+    Array [
+      "",
+      "",
+    ],
+    Array [
+      "",
+      "",
+    ],
   ],
 ]
 `;
