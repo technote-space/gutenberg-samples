@@ -1,12 +1,11 @@
 # Gutenberg Samples
 
 [![CI Status](https://github.com/technote-space/gutenberg-samples/workflows/CI/badge.svg)](https://github.com/technote-space/gutenberg-samples/actions)
-[![Build Status](https://travis-ci.com/technote-space/gutenberg-samples.svg?branch=master)](https://travis-ci.com/technote-space/gutenberg-samples)
 [![codecov](https://codecov.io/gh/technote-space/gutenberg-samples/branch/master/graph/badge.svg)](https://codecov.io/gh/technote-space/gutenberg-samples)
 [![CodeFactor](https://www.codefactor.io/repository/github/technote-space/gutenberg-samples/badge)](https://www.codefactor.io/repository/github/technote-space/gutenberg-samples)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPL%20v2%2B-blue.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
 [![PHP: >=5.6](https://img.shields.io/badge/PHP-%3E%3D5.6-orange.svg)](http://php.net/)
-[![WordPress: >=5.0](https://img.shields.io/badge/WordPress-%3E%3D5.0-brightgreen.svg)](https://wordpress.org/)
+[![WordPress: >=5.4](https://img.shields.io/badge/WordPress-%3E%3D5.4-brightgreen.svg)](https://wordpress.org/)
 
 Gutenberg Samples
 
@@ -48,7 +47,7 @@ Gutenberg Samples
 
 ## Requirements
 - \>= PHP 5.6
-- \>= WordPress 5.0
+- \>= WordPress 5.4
 
 ## Author
 [GitHub (Technote)](https://github.com/technote-space)  
