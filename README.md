@@ -1,7 +1,6 @@
 # Gutenberg Samples
 
 [![CI Status](https://github.com/technote-space/gutenberg-samples/workflows/CI/badge.svg)](https://github.com/technote-space/gutenberg-samples/actions)
-[![Build Status](https://travis-ci.com/technote-space/gutenberg-samples.svg?branch=master)](https://travis-ci.com/technote-space/gutenberg-samples)
 [![codecov](https://codecov.io/gh/technote-space/gutenberg-samples/branch/master/graph/badge.svg)](https://codecov.io/gh/technote-space/gutenberg-samples)
 [![CodeFactor](https://www.codefactor.io/repository/github/technote-space/gutenberg-samples/badge)](https://www.codefactor.io/repository/github/technote-space/gutenberg-samples)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPL%20v2%2B-blue.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
