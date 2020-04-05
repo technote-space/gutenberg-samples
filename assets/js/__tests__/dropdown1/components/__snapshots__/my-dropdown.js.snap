@@ -70,11 +70,11 @@ Array [
                 onTouchStart={[Function]}
               >
                 <ForwardRef
-                  className="components-popover components-dropdown-menu__popover"
+                  className="components-popover components-dropdown__content components-dropdown-menu__popover is-without-arrow"
                   onKeyDown={[Function]}
                 >
                   <div
-                    className="components-popover components-dropdown-menu__popover"
+                    className="components-popover components-dropdown__content components-dropdown-menu__popover is-without-arrow"
                     onKeyDown={[Function]}
                     onMouseDown={[Function]}
                   >
