@@ -37,9 +37,9 @@ Array [
             type="button"
           >
             <svg
-              aria-hidden="true"
+              aria-hidden={true}
               className="dashicon dashicons-admin-customizer"
-              focusable="false"
+              focusable={false}
               height={20}
               role="img"
               viewBox="0 0 20 20"
@@ -116,9 +116,9 @@ Array [
                                 type="button"
                               >
                                 <svg
-                                  aria-hidden="true"
+                                  aria-hidden={true}
                                   className="dashicon dashicons-admin-customizer"
-                                  focusable="false"
+                                  focusable={false}
                                   height={20}
                                   role="img"
                                   viewBox="0 0 20 20"
@@ -150,9 +150,9 @@ Array [
                                 type="button"
                               >
                                 <svg
-                                  aria-hidden="true"
+                                  aria-hidden={true}
                                   className="dashicon dashicons-admin-customizer"
-                                  focusable="false"
+                                  focusable={false}
                                   height={20}
                                   role="img"
                                   viewBox="0 0 20 20"
@@ -371,9 +371,9 @@ Array [
             type="button"
           >
             <svg
-              aria-hidden="true"
+              aria-hidden={true}
               className="dashicon dashicons-admin-customizer"
-              focusable="false"
+              focusable={false}
               height={20}
               role="img"
               viewBox="0 0 20 20"
