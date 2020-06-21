@@ -10,23 +10,23 @@ import { MyDropdown, MyDropdownControls } from '../components';
  * @param {object} setting setting
  * @returns {array} setting
  */
-export const getRichTextSetting = ( { name, create, setting = {} }, index ) => {
-	const formatName = PLUGIN_NAME + '/' + name;
-	const component = args => <MyDropdownControls>
-		{ create( { args, name, formatName } ) }
-	</MyDropdownControls>;
+export const getRichTextSetting = ({ name, create, setting = {} }, index) => {
+  const formatName = PLUGIN_NAME + '/' + name;
+  const component  = args => <MyDropdownControls>
+    {create({ args, name, formatName })}
+  </MyDropdownControls>;
 
-	setting.title = setting.title || name;
-	setting.tagName = setting.tagName || 'span';
-	setting.className = setting.className || name;
-	setting.edit = args => {
-		if ( ! index ) {
-			return <Fragment>
-				{ component( args ) }
-				<MyDropdown/>
-			</Fragment>;
-		}
-		return component( args );
-	};
-	return [ formatName, setting ];
+  setting.title     = setting.title || name;
+  setting.tagName   = setting.tagName || 'span';
+  setting.className = setting.className || name;
+  setting.edit      = args => {
+    if (!index) {
+      return <Fragment>
+        {component(args)}
+        <MyDropdown/>
+      </Fragment>;
+    }
+    return component(args);
+  };
+  return [formatName, setting];
 };

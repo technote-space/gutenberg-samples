@@ -1,8 +1,8 @@
 const { createSlotFill } = wp.components;
 
-const { Fill, Slot } = createSlotFill( 'MyDropdownControls' );
+const { Fill, Slot } = createSlotFill('MyDropdownControls');
 
 const MyDropdownControls = Fill;
-MyDropdownControls.Slot = Slot;
+MyDropdownControls.Slot  = Slot;
 
 export default MyDropdownControls;

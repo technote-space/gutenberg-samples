@@ -5,16 +5,16 @@ const { registerFormatTypeGroup, registerGroupedFormatType, getRemoveFormatButto
 const { getToolbarButtonProps, getColorButtonProps, getFontSizesButtonProps }       = Helpers;
 
 registerFormatTypeGroup('test2', {
-	icon: 'admin-network',
+  icon: 'admin-network',
 });
 registerFormatTypeGroup('inspector', {
-	toolbarGroup: 'inspector',
-	inspectorSettings: {
-		title: 'test inspector',
-		initialOpen: true,
-	},
-	useContrastChecker: true,
-	additionalInspectors: [getRemoveFormatButton('remove all formats')],
+  toolbarGroup: 'inspector',
+  inspectorSettings: {
+    title: 'test inspector',
+    initialOpen: true,
+  },
+  useContrastChecker: true,
+  additionalInspectors: [getRemoveFormatButton('remove all formats')],
 });
 
 registerGroupedFormatType(getToolbarButtonProps('test1', 'dropdown2-test1', 'admin-customizer'));
