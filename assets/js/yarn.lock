@@ -1278,20 +1278,20 @@
     react-autosize-textarea "^7.0.0"
     react-dom "^16.13.1"
 
-"@technote-space/gutenberg-utils@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-2.2.0.tgz#9a5938abd060546888613223eecff35ce66f80bc"
-  integrity sha512-wl4scVlCeWSOkiye++lkSFyPFE9hj/25GP95ZEn74afqxrDtCbBlKn5ijj72NX4m6n8k1rL1oKgcRnLldyH7sQ==
+"@technote-space/gutenberg-utils@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-2.2.1.tgz#bf74ce61746d995969f56808abf2d5956fe45d62"
+  integrity sha512-SSLlb5FGCj7FD4adMdSLz6q3t6m+QQZWT/dXiwLjhJFtPdckx5arVfQfdcSBr8k4IVLopGs0hP+uOlxTeFm0Uw==
   dependencies:
     classnames "^2.2.6"
     nano-css "^5.3.0"
 
-"@technote-space/register-grouped-format-type@^2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@technote-space/register-grouped-format-type/-/register-grouped-format-type-2.0.4.tgz#55652d9c7b8d3684ed42a0800ed6cbff69dc7c00"
-  integrity sha512-CAKrKHwMp+zB24Jv+dsUEO1BaM5p5F8gVLyJjq2/Wxk3sj4xLBe9wmuqvQazI1Bz8yKXhpVUxohs5bBNjP4J9g==
+"@technote-space/register-grouped-format-type@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@technote-space/register-grouped-format-type/-/register-grouped-format-type-2.0.5.tgz#92d824758dcd091cfa18aae3066afab824b4ca7b"
+  integrity sha512-YpwLo5x0UArwGFjnHES0bz8WLpd4pvLwxW7DnszWHW1Xi/C45JWwwnvmVL5S+UxHn3Qmw1OtKmZVDw0ZJYF2CQ==
   dependencies:
-    "@technote-space/gutenberg-utils" "^2.2.0"
+    "@technote-space/gutenberg-utils" "^2.2.1"
     classnames "^2.2.6"
 
 "@types/babel__core@^7.1.7":
@@ -7049,9 +7049,9 @@ reakit-warning@^0.4.0:
     reakit-utils "^0.13.0"
 
 reakit@^1.0.4:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/reakit/-/reakit-1.1.0.tgz#c30289907722a1fb1aa6a8c4990dac739c60e9c7"
-  integrity sha512-d/ERtwgBndBPsyPBPUl5jueyfFgsglIfQCnLMKuxM0PaWiIZ6Ys3XsYaNy/AaG8k46Ee5cQPMdRrR30nVcSToQ==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/reakit/-/reakit-1.1.1.tgz#77e09a242903735820d6020c4d41f5e99b350bdb"
+  integrity sha512-Ha/+TYBjJYDE1qQIhQX0CmVHMQuaK4qFasjHQgqIHLsvz4cHD8vCgRqwXWKSbBTH8hYpgvy057vVeyoQh6k/tQ==
   dependencies:
     "@popperjs/core" "^2.4.2"
     body-scroll-lock "^3.0.2"
