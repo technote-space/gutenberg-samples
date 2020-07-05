@@ -4,7 +4,7 @@
  * Plugin URI:
  * Description: Gutenberg samples
  * Author: Technote
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author URI: https://technote.space
  * Text Domain: gutenberg-samples
  * Domain Path: /languages/
