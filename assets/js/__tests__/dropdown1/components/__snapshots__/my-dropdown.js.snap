@@ -16,13 +16,8 @@ Array [
           aria-haspopup="true"
           aria-label="dropdown"
           className="components-button components-dropdown-menu__toggle is-opened has-icon"
-          onBlur={[Function]}
           onClick={[Function]}
-          onFocus={[Function]}
           onKeyDown={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
           type="button"
         >
           <svg
@@ -257,13 +252,8 @@ Array [
           aria-haspopup="true"
           aria-label="dropdown"
           className="components-button components-dropdown-menu__toggle has-icon"
-          onBlur={[Function]}
           onClick={[Function]}
-          onFocus={[Function]}
           onKeyDown={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
           type="button"
         >
           <svg
