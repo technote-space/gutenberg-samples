@@ -16,7 +16,7 @@
     "build:dropdown2": "webpack --mode production --config dropdown2.config.js",
     "develop:dropdown1": "webpack --mode development --config dropdown1.config.js",
     "develop:dropdown2": "webpack --mode development --config dropdown2.config.js",
-    "update": "ncu -u && yarn install && yarn upgrade && yarn audit"
+    "update": "npx npm-check-updates -u && yarn install && yarn upgrade && yarn audit"
   },
   "author": {
     "name": "Technote",
