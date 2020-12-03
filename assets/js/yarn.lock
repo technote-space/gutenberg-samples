@@ -1310,20 +1310,20 @@
     react-autosize-textarea "^7.1.0"
     react-dom "16.14.0"
 
-"@technote-space/gutenberg-utils@^2.2.21":
-  version "2.2.21"
-  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-2.2.21.tgz#232e1f2a6ae94dc0aede6ceae0d3a954786a32bc"
-  integrity sha512-BiK6xKXkyaVVfYkJh9Dzpa45Dr+DXig5xCuR4FROVV/rWIb/8qLdWgK8JDZVodOZJ0Ryfw/YLjSc1CqfpCK49g==
+"@technote-space/gutenberg-utils@^2.2.22":
+  version "2.2.22"
+  resolved "https://registry.yarnpkg.com/@technote-space/gutenberg-utils/-/gutenberg-utils-2.2.22.tgz#756b78b0648f1ced587b391646c3f69f684c742a"
+  integrity sha512-s/HgY+ytMpcDwDzOLNgI1EgctXZnziBW30umPLA3RC/gg36orFuv1wijQ6A1TorrBFfA9C0jlUc+vby8yntxbA==
   dependencies:
     classnames "^2.2.6"
     nano-css "^5.3.0"
 
-"@technote-space/register-grouped-format-type@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@technote-space/register-grouped-format-type/-/register-grouped-format-type-2.1.0.tgz#181141f2061b3dcdad4ffc6016eae8155112f423"
-  integrity sha512-ndLA0HGs7OQJXn4JQc32ytmnmQmrjWYPbgkmOlGDlmocMKyDrFtaJ6mCUgI4e9kTWGQS+I1zhILWxWwmtbL/nQ==
+"@technote-space/register-grouped-format-type@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@technote-space/register-grouped-format-type/-/register-grouped-format-type-2.1.1.tgz#cd5afa3fa429970c7792632b56bd45ad94adea64"
+  integrity sha512-8NUl/VVGJ14zbsOtq2x6/QDxBROZHzM5Sh8xXX+MuH45/z/2dGFF24RWUACykdSfZ2EacYle1Dx5PMq7OVbY7Q==
   dependencies:
-    "@technote-space/gutenberg-utils" "^2.2.21"
+    "@technote-space/gutenberg-utils" "^2.2.22"
     classnames "^2.2.6"
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
