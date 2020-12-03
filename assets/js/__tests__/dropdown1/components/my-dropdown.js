@@ -4,17 +4,19 @@ import toJson from 'enzyme-to-json';
 import { MyDropdown, MyDropdownControls } from '../../../src/dropdown1/components';
 import { createToolbarButton } from '../../../src/dropdown1/utils';
 
-const { BlockEdit, BlockFormatControls } = wp.blockEditor;
-const { SlotFillProvider }               = wp.components;
-const { createHigherOrderComponent }     = wp.compose;
-const { Fragment }                       = wp.element;
-const { addFilter, removeFilter }        = wp.hooks;
-const { create }                         = wp.richText;
+const { BlockEdit, BlockFormatControls, BlockList } = wp.blockEditor;
+const { SlotFillProvider }                          = wp.components;
+const { createHigherOrderComponent }                = wp.compose;
+const { Fragment }                                  = wp.element;
+const { addFilter }                                 = wp.hooks;
+const { create }                                    = wp.richText;
 
 beforeAll(() => {
   addFilter('editor.BlockEdit', 'components-test/dropdown1-test', createHigherOrderComponent(BlockEdit => props =>
     <Fragment>
-      <BlockEdit {...props}/>
+      <BlockList>
+        <BlockEdit {...props}/>
+      </BlockList>
       <MyDropdown/>
       <MyDropdownControls>
         {createToolbarButton({ args: { isActive: true }, name: 'test1', formatName: 'test1f' })}
@@ -24,10 +26,6 @@ beforeAll(() => {
       </MyDropdownControls>
     </Fragment>,
   ));
-});
-
-afterAll(() => {
-  removeFilter('editor.BlockEdit', 'components-test/dropdown1-test');
 });
 
 describe('MyDropdown', () => {
