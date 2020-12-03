@@ -1,11 +1,11 @@
 /* istanbul ignore next */
-const { BlockFormatControls }   = wp.blockEditor && wp.blockEditor.BlockEdit ? wp.blockEditor : wp.editor;
-const { Toolbar, DropdownMenu } = wp.components;
+const { BlockFormatControls }        = wp.blockEditor && wp.blockEditor.BlockEdit ? wp.blockEditor : wp.editor;
+const { ToolbarGroup, DropdownMenu } = wp.components;
 import MyDropdownControls from './my-dropdown-controls';
 
 const MyDropdown = () => <BlockFormatControls>
   <div className="editor-format-toolbar block-editor-format-toolbar">
-    <Toolbar>
+    <ToolbarGroup>
       <MyDropdownControls.Slot>
         {fills => <DropdownMenu
           className='components-dropdown-button'
@@ -15,7 +15,7 @@ const MyDropdown = () => <BlockFormatControls>
           controls={fills.map(([{ props }]) => props)}
         />}
       </MyDropdownControls.Slot>
-    </Toolbar>
+    </ToolbarGroup>
   </div>
 </BlockFormatControls>;
 
