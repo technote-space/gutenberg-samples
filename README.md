@@ -9,8 +9,6 @@
 
 Gutenberg Samples
 
-[Demonstration](https://technote-space.github.io/gutenberg-samples)
-
 [Latest version](https://github.com/technote-space/gutenberg-samples/releases/latest/download/release.zip)
 
 ## Table of Contents
