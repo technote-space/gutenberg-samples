@@ -5,7 +5,7 @@ import { MyDropdown, MyDropdownControls } from '../../../src/dropdown1/component
 import { createToolbarButton } from '../../../src/dropdown1/utils';
 
 const { BlockEdit, BlockFormatControls, BlockList } = wp.blockEditor;
-const { SlotFillProvider }                          = wp.components;
+const { SlotFillProvider, DropZoneProvider }        = wp.components;
 const { createHigherOrderComponent }                = wp.compose;
 const { Fragment }                                  = wp.element;
 const { addFilter }                                 = wp.hooks;
@@ -32,20 +32,22 @@ describe('MyDropdown', () => {
   it('should render MyDropdown', () => {
     const wrapper = mount(
       <SlotFillProvider>
-        <BlockFormatControls.Slot/>
-        <BlockEdit
-          name="core/quote"
-          isSelected={true}
-          attributes={({
-            className: 'test-block-edit',
-            content: create({
-              text: 'test',
-              start: 0,
-              end: 1,
-              formats: [[], [], [], []],
-            }),
-          })}
-        />
+        <DropZoneProvider>
+          <BlockFormatControls.Slot/>
+          <BlockEdit
+            name="core/quote"
+            isSelected={true}
+            attributes={({
+              className: 'test-block-edit',
+              content: create({
+                text: 'test',
+                start: 0,
+                end: 1,
+                formats: [[], [], [], []],
+              }),
+            })}
+          />
+        </DropZoneProvider>
       </SlotFillProvider>,
     );
 
