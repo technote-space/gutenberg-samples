@@ -1,6 +1,6 @@
 {
   "name": "gutenberg-samples",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "gutenberg samples",
   "scripts": {
     "start": "yarn build",
